@@ -14,7 +14,7 @@ Este proyecto es una API REST básica para la gestión de estudiantes, construid
 
 ## Tecnologías usadas
 
-- Java 17
+- Java 24
 - Spring Boot
 - Validación con `javax.validation`
 - Arquitectura limpia con DTOs y mappers
