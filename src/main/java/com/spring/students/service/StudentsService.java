@@ -12,10 +12,7 @@ import com.spring.students.model.Students;
 public class StudentsService {
 	
 	private List<Students> students = new ArrayList<>(Arrays.asList(
-		new Students(1, "Pablo", "pablo@gmail.com", 12, 640),
-	    new Students(2, "Lucía", "lucia@hotmail.com", 13, 675),
-	    new Students(3, "Juan", "juan123@yahoo.com", 11, 610),
-	    new Students(4, "Camila", "camila.romero@gmail.com", 12, 700)
+
 	));
 	 
 	public List<Students> getAllStudents(){
