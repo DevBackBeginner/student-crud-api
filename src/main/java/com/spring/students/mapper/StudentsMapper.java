@@ -6,6 +6,8 @@ import com.spring.students.model.Students;
 
 public class StudentsMapper {
 	
+	private static int idCounter = 1;
+	
 	 public static StudentResponseDto toResponseDto(Students student) {
         return new StudentResponseDto(
             student.getName(),
@@ -16,6 +18,6 @@ public class StudentsMapper {
     }
 
 	 public static Students toEntity(StudentRequestDto dto) {
-		 return new Students(0, dto.getName(), dto.getEmail(), dto.getEdad(), dto.getCurso());
+		 return new Students(idCounter++, dto.getName(), dto.getEmail(), dto.getEdad(), dto.getCurso());
 	 }
 }
